@@ -1,0 +1,16 @@
+{
+  "name": "mazelib",
+  "version": "1.0.0",
+  "description": "Library ported from the content of Mazes for Programmers by Jamis Buck",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dijkstra": "node dist/dijkstra.js"
+  },
+  "author": "Ray Schamp",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "typescript": "^5.3.3"
+  }
+}
