@@ -1,9 +1,11 @@
+import { makeAldousBroder } from "./aldous-broder";
 import { makeBinaryTree } from "./binary-tree";
 import { createGrid, gridToString } from "./grid";
 import { makeSidewinder } from "./sidewinder";
+import { makeWilsons } from "./wilsons";
 
-const grid = createGrid(25, 50);
+const grid = createGrid(20, 20);
 
-makeSidewinder(grid);
+makeWilsons(grid);
 
 console.log(gridToString(grid));

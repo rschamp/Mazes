@@ -54,12 +54,12 @@ function wallBetween(
 ): boolean {
   if (!(cell1 || cell2)) return false;
   if ([cell1, cell2].some((c) => !c)) return true;
-  if (getNeighbors(cell1!).indexOf(cell2) === -1) return false;
+  if (getNeighbors(cell1!).indexOf(cell2 as Cell) === -1) return false;
   return !linked(cell1, cell2);
 }
 
-function getNeighbors(cell: Cell): (Cell | null | undefined)[] {
-  const neighbors: (Cell | null)[] = [];
+function getNeighbors(cell: Cell): Cell[] {
+  const neighbors: Cell[] = [];
   if (cell.north) neighbors.push(cell.north);
   if (cell.south) neighbors.push(cell.south);
   if (cell.east) neighbors.push(cell.east);

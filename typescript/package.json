@@ -4,6 +4,7 @@
   "description": "Library ported from the content of Mazes for Programmers by Jamis Buck",
   "main": "index.js",
   "scripts": {
+    "watch": "tsc --watch",
     "start": "node dist/index.js",
     "dijkstra": "node dist/dijkstra.js"
   },
